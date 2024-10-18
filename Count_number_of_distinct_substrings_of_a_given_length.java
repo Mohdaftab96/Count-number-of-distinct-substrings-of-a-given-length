@@ -23,7 +23,7 @@ public class Count_number_of_distinct_substrings_of_a_given_length {
             String sum = "";
             for(int i=0; i<n-k+1; i++){
                   sum = str.substring(i, i+k); // finding Substring of Given String
-                  if(!hash.contains(sum)){ //Searching in map ab, ba, ab, ba 
+                  if(!hash.contains(sum)){ //Searching in hash  ab, ba, ab, ba 
                         hash.add(sum);
                   }     
             }
